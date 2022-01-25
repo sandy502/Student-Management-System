@@ -19,7 +19,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    //handler method to handle list students and return mode and view
+    //handler method to handle list students and return model and view
     @GetMapping("/students")
     public String listStudents(Model model) {
         model.addAttribute("students", studentService.getAllStudents());
